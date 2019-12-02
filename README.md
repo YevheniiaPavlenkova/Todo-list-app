@@ -1,6 +1,6 @@
 #Todo-list-app
 #User guide 
-#1) To add new task click "Add new task" button. The form for adding will be shown, to save click "Save" button.
+1) To add new task click "Add new task" button. The form for adding will be shown, to save click "Save" button.
 #2) New task will appear on the screen, and "Delete", "Edit", "Done" buttons will be in it.
 #3) "Sort by priority" button sorts all tasks so that they will be displayed in this order: firstly  undone tasks, descending priority, secondly done tasks, descending priority.
 #4) "Sort by status" button sorts all tasks so that they will be displayed in this order: firstly undone tasks, secondly done tasks.
