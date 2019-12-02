@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1" />
+    <title>todo-list</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <h1>TODO list app</h1>       
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <button type="button" class="menu-button" id="addTaskBtn">Add New Task</button>
+        <button type="button" class="menu-button" id="sortByPriorityBtn">Sort by Priority</button>
+        <button type="button" class="menu-button" id="sortByStatusBtn">Sort by Status</button>
+        <div class="search-div">
+            <input type="text" class="search-input" placeholder="Search by title" id="searchInput">
+            <button class="search-button" type="button" id="searchByTitleBtn"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <div class="todo-list"> 
+        <p id="greetings" style="text-align:center;"></p>
+        <div id="todoListContent" class="todo-list-content">         
+        </div>
+    </div>
+    <div id="modal"  class="modal">
+        <div class="modal-content">       
+            <div class="modal-header">
+                <span class="closeSign" id="closeSign">&times;</span>                        
+            </div>     
+            <div class="modal-body">   
+                <p>Fields with * are required</p><span id="itemId" style="display: none;"></span>    
+                <form id="modalForm" class="modalForm" action="#">
+                    <br><label for="title">Title *: </label>
+                    <input type="text"
+                        name="title"
+                        id="title"
+                        placeholder="Meet with mom"
+                        maxlength="20"
+                        title="max length 20, only letters and numbers"
+                        pattern="[A-Za-z0-9\s]{1,20}"
+                        required>
+
+                    <br><br><label for="description">Description: </label>
+                    <textarea name="description"
+                        id="description"
+                        placeholder="Meet with mom on Saturday (17/09/2019)"
+                        rows="5"></textarea>
+
+                    <br><br><label for="priority">Priority *: </label>
+                    <select name="priority"
+                        id="priority"
+                        required>
+                        <option value="1">low</option>
+                        <option value="2">middle</option>
+                        <option value="3">high</option>                            
+                    </select>
+
+                    <br><br><label for="deadline">Deadline: </label>
+                    <input type="datetime-local" 
+                        name="deadline"
+                        id="deadline">
+                </form>
+            </div>                  
+            <div class="modal-footer">
+                <button id="cancel" class="todo-item-button">Cancel</button>                       
+                <input  class="todo-item-button" style="float: right;" form="modalForm" type="submit" value="Save">
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script> 
+</body>
+
+</html>
