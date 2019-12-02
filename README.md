@@ -6,6 +6,6 @@ User guide
 4) "Sort by status" button sorts all tasks so that they will be displayed in this order: firstly undone tasks, secondly done tasks.
 5) Input text in "Search by title" field and click the search button right to it, if there are matches they will be shown. To see all tasks delete text from the "Search by title" field.
 #
-#Tasks are saved in LocaleStorage
+Tasks are saved in LocaleStorage
 #
-#Next versions of this app will include adaptation for different screen sizes and some new functions.
+Next versions of this app will include adaptation for different screen sizes and some new functions.
