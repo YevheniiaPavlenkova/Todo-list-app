@@ -68,24 +68,12 @@ header {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
 .search-div {
-  width: 20%; }
-
-.search-button {
-  float: left;
-  font-size: 25px;
-  font-weight: bold;
-  height: 30px;
-  background-color: #696868;
-  margin: 4px 2px;
-  padding: 5px 10px 35px 10px;
-  border: none;
-  border-radius: 14px;
-  color: white; }
+  width: 15%; }
 
 .search-input {
   float: left;
   height: 30px;
-  width: 60%;
+  width: 100%;
   font-size: 20px;
   font-weight: bold;
   margin: 4px 2px;
