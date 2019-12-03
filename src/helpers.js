@@ -186,6 +186,7 @@ export const sortByStatus = () => {
 
 export const searchByTitle = () => {
   const searchText = document.getElementById('searchInput').value.toLowerCase();
+  document.getElementById('greetings').innerHTML = '';
   if (searchText) {
     const itemsList = getTodoItems();
     const foundItems = itemsList.filter((a) => a.title.toLowerCase().includes(searchText));

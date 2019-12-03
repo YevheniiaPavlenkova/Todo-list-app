@@ -8,7 +8,7 @@ const cancelBtn = document.getElementById('cancel');
 const modalForm = document.getElementById('modalForm');
 const sortByPriorityBtn = document.getElementById('sortByPriorityBtn');
 const sortByStatusBtn = document.getElementById('sortByStatusBtn');
-const searchByTitleBtn = document.getElementById('searchByTitleBtn');
+const searchByTitleInput = document.getElementById('searchInput');
 
 if (!localStorage.getItem('todoList')) {
   localStorage.setItem('todoList', JSON.stringify([]));
@@ -34,6 +34,7 @@ sortByPriorityBtn.onclick = () => sortByPriority();
 
 sortByStatusBtn.onclick = () => sortByStatus();
 
-searchByTitleBtn.onclick = () => searchByTitle();
+searchByTitleInput.oninput = () => searchByTitle();
+
 
 showAllTodoItems();
